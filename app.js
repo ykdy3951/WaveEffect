@@ -36,7 +36,7 @@ class App {
         };
         
         this.image = new Image();
-        this.image.src = 'The_Girl_with_a_Pearl_Earring.jpg';
+        this.image.src = 'The_Starry_Night.jpg';
         this.image.onload = () => {
             this.isLoaded = true;
             this.drawImage();
