@@ -138,7 +138,7 @@ class App {
                     this.radius,
                     this.pixelSize,
                     red, green, blue,
-//                     scale
+                    scale
                 );
                 
 
@@ -181,13 +181,13 @@ class App {
 
 
         // deleted for BW mode
-//         this.ctx.drawImage(
-//             this.image,
-//             0, 0,
-//             this.image.width, this.image.height,
-//             this.imgPos.x, this.imgPos.y,
-//             this.imgPos.width, this.imgPos.height,
-//         );
+        this.ctx.drawImage(
+            this.image,
+            0, 0,
+            this.image.width, this.image.height,
+            this.imgPos.x, this.imgPos.y,
+            this.imgPos.width, this.imgPos.height,
+        );
 
         this.ripple.start(e.offsetX, e.offsetY);
     }
