@@ -130,7 +130,7 @@ class App {
                 const blue = this.imgData.data[pixelIndex + 2];
                 
                 // added
-                // const scale = getBWValue(red, green, blue, false);
+                const scale = getBWValue(red, green, blue, false);
                 
                 // If you don't like BW, delete scale part
                 const dot = new Dot(
@@ -138,7 +138,7 @@ class App {
                     this.radius,
                     this.pixelSize,
                     red, green, blue,
-                    scale
+//                     scale
                 );
                 
 
