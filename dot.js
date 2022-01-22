@@ -36,10 +36,10 @@ export class Dot {
 
         ctx.beginPath();
 
-        // added
-        ctx.fillStyle = '#000';
+//         // added
+//         ctx.fillStyle = '#000';
 
-        // ctx.fillStyle = `rgb(${this.red}, ${this.green}, ${this.blue})`;
+        ctx.fillStyle = `rgb(${this.red}, ${this.green}, ${this.blue})`;
         ctx.arc(this.x, this.y, this.radius, 0, PI2, false);
         ctx.fill();
     }
