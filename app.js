@@ -19,12 +19,12 @@ class App {
         window.addEventListener('resize', this.resize.bind(this), false);
         this.resize();
         
-        // added
-        this.radius = 16;
-        this.pixelSize = 16;
+//         // added
+//         this.radius = 16;
+//         this.pixelSize = 16;
         
-        // this.radius = 10;
-        // this.pixelSize = 30;
+        this.radius = 10;
+        this.pixelSize = 30;
         this.dots = [];
 
         this.isLoaded = false;
@@ -129,8 +129,8 @@ class App {
                 const green = this.imgData.data[pixelIndex + 1];
                 const blue = this.imgData.data[pixelIndex + 2];
                 
-                // added
-                const scale = getBWValue(red, green, blue, false);
+//                 // added
+//                 const scale = getBWValue(red, green, blue, false);
                 
                 // If you don't like BW, delete scale part
                 const dot = new Dot(
@@ -138,16 +138,16 @@ class App {
                     this.radius,
                     this.pixelSize,
                     red, green, blue,
-                    scale
+//                     scale
                 );
                 
 
-                // added 
-                if (dot.targetRadius > 0.1) {
-                    this.dots.push(dot);
-                }
+//                 // added 
+//                 if (dot.targetRadius > 0.1) {
+//                     this.dots.push(dot);
+//                 }
 
-                // this.dots.push(dot);
+                this.dots.push(dot);
             }
         }
     }
