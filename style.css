@@ -14,8 +14,8 @@ body {
     height: 100%;
 
     /* added for BW mode */
-    background-color: #fff;
-    /* background-color: #000; */
+/*     background-color: #fff; */
+    background-color: #000;
     position: relative;
 }
 
